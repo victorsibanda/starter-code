@@ -6,5 +6,6 @@ Vagrant.configure("2") do |config|
 
 
 config.vm.synced_folder( 'app' , '/app_destination')
+config.vm.provision 'shell', path:'environment/provision.sh'
 
 end
