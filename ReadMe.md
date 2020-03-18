@@ -36,6 +36,16 @@ sudo npm install pm2@latest -g
 
 ```
 
+### To run the VM
+
+go to location of your starter-code after completing tasks above use commands.
+
+- `vagrant up` - To initialise and start VM
+- `vagrant ssh` - To use VM
+- In the VM use `exit` - To leave the VM
+- `vagrant destroy` - To stop the VM
+- `vagrant reload` - To apply changes in the files without having to download the VM again. 
+
 ### To test if the vagrant file works I used
 
 
