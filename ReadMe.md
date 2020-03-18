@@ -38,10 +38,15 @@ sudo npm install pm2@latest -g
 
 ### To test if the vagrant file works I used
 
-'''rake.spec''' In the spec-tests directory.
+
+`cd environment`
+`cd spec-tests`
+`rake.spec` In the spec-tests directory.
 
 
 ### Results of Test
 
 All tests passed, one issue I had was finding the right issue of node js, because there is no longer LTS for version 6 so
 I edited it to version 8 in the test file.
+
+![Screenshot 2020-03-18 at 12 15 13](https://user-images.githubusercontent.com/60632288/76960051-9e09ed80-6912-11ea-8e0a-e00cf9ede1a2.png)
