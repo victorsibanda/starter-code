@@ -21,19 +21,18 @@ end
 Code for Provisioning
 ```
 
-/#!/usr/bin/env bash
+#!/bin/bash
 
 
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install git
 sudo apt-get install nginx -y
-sudo apt-get install nodejs -y
+curl -sL https://deb.nodesource.com/setup_6.x | bash -
+apt-get install -y nodejs
 sudo apt install build-essential
 curl -L https://npmjs.org/install.sh | sudo sh
 sudo npm install pm2@latest -g
-
-
 ```
 
 ### To run the VM
@@ -44,7 +43,7 @@ go to location of your starter-code after completing tasks above use commands.
 - `vagrant ssh` - To use VM
 - In the VM use `exit` - To leave the VM
 - `vagrant destroy` - To stop the VM
-- `vagrant reload` - To apply changes in the files without having to download the VM again. 
+- `vagrant reload` - To apply changes in the files without having to download the VM again.
 
 ### To test if the vagrant file works I used
 
